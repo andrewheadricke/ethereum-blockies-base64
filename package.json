@@ -5,9 +5,7 @@
   "main": "./dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config=webpack.config.js",
-    "example": "npm run build && webpack --config=webpack.example.config.js",
-    "prepublish": "npm run build"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -23,9 +21,7 @@
     "pnglib": "0.0.1"
   },
   "devDependencies": {
-    "html-webpack-plugin": "3.0.6",
-    "rollup": "0.56.5",
-    "webpack": "4.1.1",
-    "webpack-cli": "2.0.10"
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-terser": "^0.4.0"
   }
 }
